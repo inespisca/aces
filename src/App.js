@@ -1,44 +1,47 @@
 import React, { Component }  from 'react';
 import QualCard from './Components/QualCard';
 import qualifiers from './Components/Qualifiers';
+import Navbar from './Components/Navbar';
 import './App.css';
 
 class App extends Component {
   state = {
-    qual: [],
-    //chal: [],
+    quals: [],
+    chal: []
   }
 
   componentDidMount() {
-    this.setState({ qual: qualifiers })
+    this.setState({ quals: qualifiers })
   }
 
-  //handleAddToChallenge = (qual, chal) => {
-  //  this.setState((prevState)  => {
-  //    // if it's there remove it
-  //    // if it's not, add it
-  //    const updatedChal = prevState[chal].includes(qual) ?
-  //      prevState[chal].filter((element) => element!==qual) :
-  //      [...prevState[chal], qual];
-//
-  //    return {
-  //      ...prevState,
-   //     [chal]: updatedChal
-  //    }
-  //  })
-  //}
+  handleAddToChallenge = (qual, chal) => {
+    this.setState((prevState)  => {
+      const updatedChal = prevState[chal].includes(qual) ?
+        prevState[chal].filter((element) => element!==qual) :
+        [...prevState[chal], qual];
+
+      return {
+        ...prevState,
+        [chal]: updatedChal
+      }
+    })
+  }
+
 
   render () {
-    const { qual } = this.state;
+    const { quals, chal } = this.state;
 
     return (
       <>
-        <h1 class="QualTitle">Qualifiers</h1>
+        <Navbar chal={chal}/>
         <div className="qualifiers">
+          <h1 class="QualTitle">Qualifiers</h1>
           {
-            qual.map(qual => (
+            quals.map(qual => (
               <QualCard
-                qualifiers={qual}
+                qual={qual}
+                isChallenged={chal.includes(qual)}
+                onAddToChallenge={this.handleAddToChallenge}
               />
             ))
           }
