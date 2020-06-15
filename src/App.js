@@ -1,26 +1,51 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component }  from 'react';
+import QualCard from './Components/QualCard';
+import qualifiers from './Components/Qualifiers';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  state = {
+    qual: [],
+    //chal: [],
+  }
+
+  componentDidMount() {
+    this.setState({ qual: qualifiers })
+  }
+
+  //handleAddToChallenge = (qual, chal) => {
+  //  this.setState((prevState)  => {
+  //    // if it's there remove it
+  //    // if it's not, add it
+  //    const updatedChal = prevState[chal].includes(qual) ?
+  //      prevState[chal].filter((element) => element!==qual) :
+  //      [...prevState[chal], qual];
+//
+  //    return {
+  //      ...prevState,
+   //     [chal]: updatedChal
+  //    }
+  //  })
+  //}
+
+  render () {
+    const { qual } = this.state;
+
+    return (
+      <>
+        <h1>Shop</h1>
+        <div className="qualifiers">
+          {
+            qual.map(qual => (
+              <QualCard
+                qualifiers={qual}
+              />
+            ))
+          }
+        </div>
+      </>
+    );
+  }
 }
 
 export default App;
