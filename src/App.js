@@ -33,7 +33,7 @@ class App extends Component {
 
     return (
       <>
-        <h1>Qualifiers</h1>
+        <h1 class="QualTitle">Qualifiers</h1>
         <div className="qualifiers">
           {
             qual.map(qual => (
