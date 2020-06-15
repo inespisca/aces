@@ -1,15 +1,15 @@
 const qualifiers = [
     {
-        name: 'Yuga',
+        name: 'Yuga Mikado',
         world: 'Dragon World',
-        flag: 'dragon.png',
-        pic: 'yuga.png'
+        flag: 'https://i.imgur.com/epIFZUq.png',
+        pic: 'https://i.imgur.com/D1yHXbw.png'
     },
     {
-        name: 'Ranma',
+        name: 'Ranma Kakogawa',
         world: 'Lost World',
-        flag: 'lost.png',
-        pic: 'ranma2.png'
+        flag: 'https://i.imgur.com/AvcDSgg.png',
+        pic: 'https://i.imgur.com/dXhxeIW.png'
     }
 ];
 

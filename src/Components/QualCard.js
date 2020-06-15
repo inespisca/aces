@@ -7,6 +7,7 @@ const QualCard = ({ qualifiers }) => {
             <img src={qualifiers.flag} alt=""/>
             <p>{qualifiers.world}</p>
             <img src={qualifiers.pic} alt=""/>
+            <hr></hr>
         </>
     )
 }
