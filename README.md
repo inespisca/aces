@@ -5,7 +5,7 @@ A React only app based in an app shown in the Japanese anime *Future Card Buddyf
 The Buddyfighter card list (Info listed: Name of the fighter, World used and a photo of the player):
 ![alt text](https://i.imgur.com/Eg55ThA.png "")
 
-The Buddyfighter profile without clicking anywhere - it states the name of the fight, their points in the competition and photo of the player):
+The Buddyfighter profile without clicking anywhere - it states the name of the fighter, their points in the competition and photo of the fighter):
 ![alt text](https://i.imgur.com/jAD3eau.png "")
 
 The Buddyfighter profile after clicking to challenge adds a text saying "-Decision-" over the picture of the challenged fighter:
