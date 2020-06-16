@@ -35,7 +35,7 @@ class App extends Component {
       <>
         <Navbar chal={chal}/>
         <div className="qualifiers">
-          <h1 class="QualTitle">Qualifiers</h1>
+          <h1 class="QualTitle">Who would you like to challenge?</h1>
           {
             quals.map(qual => (
               <QualCard
