@@ -9,7 +9,7 @@ The Buddyfighter profile without clicking anywhere - it states the name of the f
 ![alt text](https://i.imgur.com/jAD3eau.png "")
 
 The Buddyfighter profile after clicking to challenge adds a text saying "-Decision-" over the picture of the challenged fighter:
-![alt text](https://i.imgur.com/Eg55ThA.png "")
+![alt text](https://i.imgur.com/JbktIj8.png "")
 
 
 Despite being a project still in progress, you can see how it is going so far in [its deployment page](https://buddyaces.netlify.app/)
