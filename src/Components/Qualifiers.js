@@ -63,6 +63,13 @@ const qualifiers = [
         pic: 'https://i.imgur.com/QtjNbfa.png'
     },
     {
+        name: 'Eden Hanazono',
+        world: 'Legend World',
+        count: 1,
+        flag: 'https://i.imgur.com/SaFy715.png',
+        pic: 'https://i.imgur.com/H3crSk7.png'
+    },
+    {
         name: 'Ranma Kakogawa',
         world: 'Darkness Dragon World',
         count: 1,
