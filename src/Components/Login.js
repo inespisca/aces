@@ -1,11 +1,10 @@
 import React from 'react';
-import SameName from './SameName';
 
-const QualCard = ({ qual, isChallenged, userCharacter }) => {    
+const Login = ({ qual, isChallenged, onAddToChallenge }) => {    
     return (
         <div class="">
             <h2 class="name">{qual.name}</h2>
-            <SameName isChallenged={isChallenged} userCharacter={userCharacter} qual={qual}/>
+            <Challenged isChallenged={isChallenged} onAddToChallenge={onAddToChallenge} qual={qual}/>
             <div class="pics">
                 <div class="pic">
                     <img class="flag" src={qual.flag} alt=""/>

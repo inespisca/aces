@@ -70,7 +70,7 @@ const qualifiers = [
         pic: 'https://i.imgur.com/H3crSk7.png'
     },
     {
-        name: 'Ranma Kakogawa',
+        name: 'Rei Urameshi',
         world: 'Darkness Dragon World',
         count: 1,
         flag: 'https://i.imgur.com/CBCL38b.png',
