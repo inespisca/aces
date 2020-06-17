@@ -20,7 +20,7 @@ const ChooseCharacter = ({ userCharacter, selectCharacter }) => {
             </div>
             <div className="YourPhoto">
                 {
-                    userCharacter.name && <img className="nicepic" src={userCharacter.pic}></img>
+                    userCharacter.name && <img className="nicepic" src={userCharacter.pic} alt=""></img>
                 }
             </div>
             <div className="Force">
