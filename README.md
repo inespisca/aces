@@ -1,4 +1,4 @@
-Notice: right now the page doesn't look pretty because I've inserted features that are meant for different pages in the same page. I'm doing functionality first and looks second. Functionality is doing well, which means I'll now work in making this look a bit better.
+Notice: right now the page doesn't look pretty because I've inserted features that are meant for different pages in the same page. I'm doing functionality first and looks second. Functionality is doing well, which means I'll now work in making this look a bit better. I hope you'll enjoy how it'll look in the end.
 
 ## Aces
 
