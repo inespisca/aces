@@ -2,12 +2,14 @@ import React, { Component }  from 'react';
 import QualCard from './Components/QualCard';
 import qualifiers from './Components/Qualifiers';
 import Navbar from './Components/Navbar';
+import ChooseCharacter from './Components/PickCharacter';
 import './App.css';
 
 class App extends Component {
   state = {
     quals: [],
-    chal: []
+    chal: [],
+    userCharacter: {}
   }
 
   componentDidMount() {
@@ -27,6 +29,11 @@ class App extends Component {
     })
   }
 
+  selectCharacter = event => {
+    const clickedStr = event.target.value;
+    const clickedChar = this.state.quals.find(char => char.name === clickedStr);
+    this.setState({ userCharacter: clickedChar || {} });
+  }
 
   render () {
     const { quals, chal } = this.state;
@@ -34,6 +41,10 @@ class App extends Component {
     return (
       <>
         <Navbar chal={chal}/>
+        <ChooseCharacter
+            userCharacter={this.state.userCharacter}
+            selectCharacter={this.selectCharacter}
+          />
         <div className="qualifiers">
           <h1 class="QualTitle">Who would you like to challenge?</h1>
           {
@@ -42,6 +53,7 @@ class App extends Component {
                 qual={qual}
                 isChallenged={chal.includes(qual)}
                 onAddToChallenge={this.handleAddToChallenge}
+                userCharacter={this.state.userCharacter}
               />
             ))
           }
