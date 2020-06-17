@@ -1,22 +1,16 @@
 import React from 'react';
 
-const Login = ({ qual, isChallenged, onAddToChallenge }) => {    
+const Login = ({ userCharacter }) => {    
     return (
-        <div class="">
-            <h2 class="name">{qual.name}</h2>
-            <Challenged isChallenged={isChallenged} onAddToChallenge={onAddToChallenge} qual={qual}/>
-            <div class="pics">
+        <div class="loginshape">
+            <h2 class="loginname">You're logged in as {userCharacter.name}!</h2>
+            <div class="pic">
                 <div class="pic">
-                    <img class="flag" src={qual.flag} alt=""/>
-                    <p class="world">{qual.world}</p>
-                </div>
-                <div class="pic">
-                    <img class="photo" src={qual.pic} alt=""/>
+                    <img class="loginpic" src={userCharacter.pic} alt=""/>
                 </div>
             </div>
-            <hr></hr>
         </div>
     )
 }
 
-export default QualCard;
+export default Login;
