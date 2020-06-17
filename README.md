@@ -1,3 +1,5 @@
+Notice: right now the page doesn't look pretty because I've inserted features that are meant for different pages in the same page. I'm doing functionality first and looks second. Functionality is doing well, which means I'll now work in making this look a bit better.
+
 ## Aces
 
 A React only app based in an app shown in the Japanese anime *Future Card Buddyfight Ace*, where Buddyfight (a card game) players can select who to challenge next for a fight. Below is how the app looks like in the animation.
@@ -20,3 +22,5 @@ Technologies used:
 
 Features:
 * **Challenge button** - Works exactly like carts in market websites, however this time it counts the number of buddyfighters you challenge. It works! Feel free to play with the button as much as you'd like. After clicking to challenge a buddyfighter, said button will change and say to remove the challenge. The counter on top right will also change its number accordingly.
+* **Fake login** - I've connected the dropdown where the person selects the character to login as to the fake API and the info selected in that dropdown will be carried out throughout the whole app through props.
+* **Can't challenge yourself** - Name says it all. As the list of the characters to login and the list of the characters to challenge is exactly the same, if this wasn't implemented, we'd have a person picking to be Ranma and selecting to challenge Ranma, which wouldn't make much sense. That way, this feature hides the challenge button if you are logged in as that character and it returns a message saying that you can't challenge yourself. In the specific case of Yuga Mikado, which appears three times, the message will appear in all three Yuga Mikados instead of just one.
