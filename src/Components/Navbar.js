@@ -8,7 +8,7 @@ const Navbar = ({chal}) => {
         })
         return sum;
     }
-    return <div className="challenges">Challenged Buddyfighters: {getTotal()}</div>
+    return <div className="challenges">You've challenged {getTotal()} Buddyfighters.</div>
 }
 
 export default Navbar;

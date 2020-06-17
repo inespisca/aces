@@ -1,6 +1,47 @@
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(61, 61, 61);
+  border-style: solid;
+  border-color: #111;
+}
+
+.navlink {
+  float: left;
+}
+
+.navlink a {
+  display: block;
+  color: rgb(202, 202, 202);
+  text-align: center;
+  padding: 70px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.navlink a:hover {
+  background-color: #111;
+}
+
+.loginshape {
+  text-align: right;
+  margin-right: 3%;
+  color: white;
+  font-size: 11px;
+}
+
+.loginpic {
+  margin-right: -9%;
+  width: 200px;
+  height: auto;
+}
+
 .challenges {
   text-align: right;
   margin-right: 3%;
+  color: white;
 }
 
 .QualTitle {

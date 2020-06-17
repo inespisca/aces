@@ -1,8 +1,9 @@
 import React from 'react';
 
-const ChooseCharacter = ({ userCharacter, selectCharacter }) => {
+const ChooseCharacter = ({ userCharacter, selectCharacter, Link }) => {
     return (
         <div className="CharacterSelectionContainer">
+            <p>Please pick a character and then click on the "Yes!" button that will appear to pick your next opponent.</p>
             <div className="PickingChar">
                 <h1>Pick your character</h1>
                 <select onChange={selectCharacter} >
@@ -20,14 +21,17 @@ const ChooseCharacter = ({ userCharacter, selectCharacter }) => {
             </div>
             <div className="YourPhoto">
                 {
-                    userCharacter.name && <img className="nicepic" src={userCharacter.pic}></img>
+                    userCharacter.name && <img className="nicepic" src={userCharacter.pic} alt=""></img>
                 }
             </div>
-            <div className="Force">
+            <div className="Pick">
                 {
                     userCharacter.name && <p className="May">Welcome back, {userCharacter.name}! Are you ready to pick your next opponent?</p>
                 }
             </div>
+            {
+                userCharacter.name && <div className="PickButton"><nav><ul><li><Link to="/challenge"><p>Yes!</p></Link></li></ul></nav></div>
+            }
         </div>
     )
 };
