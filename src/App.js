@@ -83,7 +83,7 @@ class App extends Component {
                   </li>
                   <li class="navlink">
                     <Link to="/challenge">
-                      <p>Challenge a Buddyfighter!</p>
+                      <p>Challenge</p>
                     </Link>
                   </li>
                   <Login userCharacter={this.state.userCharacter} userFlag={this.state.userFlag} />
