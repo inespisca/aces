@@ -3,7 +3,7 @@ import SameName from './SameName';
 
 const QualCard = ({ qual, isChallenged, userCharacter, onAddToChallenge }) => {    
     return (
-        <div class="">
+        <div class="contain">
             <h2 class="name">{qual.name}</h2>
             <SameName isChallenged={isChallenged} userCharacter={userCharacter} qual={qual} onAddToChallenge={onAddToChallenge}/>
             <div class="pics">
@@ -15,7 +15,6 @@ const QualCard = ({ qual, isChallenged, userCharacter, onAddToChallenge }) => {
                     <img class="photo" src={qual.pic} alt=""/>
                 </div>
             </div>
-            <hr></hr>
         </div>
     )
 }

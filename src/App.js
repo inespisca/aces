@@ -11,7 +11,8 @@ class App extends Component {
   state = {
     quals: [],
     chal: [],
-    userCharacter: {}
+    userCharacter: {},
+    userFlag: {}
   }
 
   componentDidMount() {
@@ -37,6 +38,12 @@ class App extends Component {
     this.setState({ userCharacter: clickedChar || {} });
   }
 
+  selectFlag = event => {
+    const clickedStr = event.target.value;
+    const clickedFlag = this.state.quals.find(char => char.world === clickedStr);
+    this.setState({ userFlag: clickedFlag || {} });
+  }
+
   render () {
     const { quals, chal } = this.state;
 
@@ -57,6 +64,8 @@ class App extends Component {
               <ChooseCharacter
               userCharacter={this.state.userCharacter}
               selectCharacter={this.selectCharacter}
+              userFlag={this.state.userFlag}
+              selectFlag={this.selectFlag}
               Link={Link}
               />
             </Route>
@@ -71,10 +80,10 @@ class App extends Component {
                   </li>
                   <li class="navlink">
                     <Link to="/challenge">
-                      <p>Challenge a Fighter!</p>
+                      <p>Challenge a Buddyfighter!</p>
                     </Link>
                   </li>
-                  <Login userCharacter={this.state.userCharacter} />
+                  <Login userCharacter={this.state.userCharacter} userFlag={this.state.userFlag} />
                   <Navbar chal={chal}/>
                 </ul>
               </nav>

@@ -1,3 +1,11 @@
+body {
+  background-image: url("https://i.imgur.com/5CWATZA.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 2400px 1400px;
+  background-position: center;
+}
+
 .nav {
   list-style-type: none;
   margin: 0;
@@ -20,9 +28,82 @@
   text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
 .navlink a:hover {
   background-color: #111;
+}
+
+.CharacterSelectionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  margin-top: 10%;
+  margin-left: 37%;
+  transform: translate(-50%, -50%);
+}
+
+.box select {
+  background-color: rgb(61, 61, 61);
+  color: white;
+  padding: 12px;
+  width: 250px;
+  border: none;
+  font-size: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+}
+
+.box::before {
+  content: "▼";
+  position: absolute;
+  top: 0;
+  left: 111%;
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  font-size: 28px;
+  line-height: 45px;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+}
+
+.box:hover::before {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.box select option {
+  padding: 30px;
+}
+
+.nicepic {
+  width: 400px;
+  height: auto;
+}
+
+li {
+  list-style: none;
+}
+
+.yesbtn {
+  background-color: rgb(61, 61, 61);
+  border: solid;
+  border-radius: 12px;
+  border-color: rgb(24, 24, 24);
+  color: rgb(255, 255, 255);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: -25%;
 }
 
 .loginshape {
@@ -42,6 +123,11 @@
   text-align: right;
   margin-right: 3%;
   color: white;
+}
+
+.contain {
+  border-radius: 20px;
+  padding: 30px;
 }
 
 .QualTitle {
@@ -64,6 +150,10 @@
   margin-bottom: 2%;
 }
 
+.selfwarning {
+  text-align: center;
+}
+
 .pics {
   display: flex;
 }
@@ -73,9 +163,9 @@
 }
 
 .flag {
-  width: 200px;
+  width: 150px;
   height: auto;
-  max-height: 250px;
+  max-height: 190px;
   max-width: auto;
 }
 
