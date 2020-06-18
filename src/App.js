@@ -2,6 +2,7 @@ import React, { Component }  from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import QualCard from './Components/QualCard';
 import qualifiers from './Components/Qualifiers';
+import worlds from './Components/Worlds';
 import Navbar from './Components/Navbar';
 import ChooseCharacter from './Components/PickCharacter';
 import Login from './Components/Login';
@@ -11,12 +12,14 @@ class App extends Component {
   state = {
     quals: [],
     chal: [],
+    flags: [],
     userCharacter: {},
     userFlag: {}
   }
 
   componentDidMount() {
     this.setState({ quals: qualifiers })
+    this.setState({ flags: worlds })
   }
 
   handleAddToChallenge = (qual, chal) => {
@@ -40,7 +43,7 @@ class App extends Component {
 
   selectFlag = event => {
     const clickedStr = event.target.value;
-    const clickedFlag = this.state.quals.find(char => char.world === clickedStr);
+    const clickedFlag = this.state.flags.find(char => char.worldName === clickedStr);
     this.setState({ userFlag: clickedFlag || {} });
   }
 
