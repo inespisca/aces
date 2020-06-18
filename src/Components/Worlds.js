@@ -4,12 +4,28 @@ const worlds = [
         worldFlag: 'https://i.imgur.com/G8Pcjyr.png',
     },
     {
+        worldName: 'Chaos',
+        worldFlag: 'https://i.imgur.com/swPZ0R7.png',
+    },
+    {
         worldName: 'Danger World',
         worldFlag: 'https://i.imgur.com/eKJpsXc.png',
     },
     {
         worldName: 'Darkness Dragon World',
         worldFlag: 'https://i.imgur.com/CBCL38b.png',
+    },
+    {
+        worldName: 'Divine Guardians',
+        worldFlag: 'https://i.imgur.com/tisDh8P.png',
+    },
+    {
+        worldName: 'Dragon Ein',
+        worldFlag: 'https://i.imgur.com/CJeGKX2.png',
+    },
+    {
+        worldName: 'Dragon Zwei',
+        worldFlag: 'https://i.imgur.com/b9NS88s.png',
     },
     {
         worldName: 'Dragon World',
@@ -40,8 +56,24 @@ const worlds = [
         worldFlag: 'https://i.imgur.com/OAwoj17.png',
     },
     {
+        worldName: 'Parade of the Hundred Demons',
+        worldFlag: 'https://i.imgur.com/HZqGvva.png',
+    },
+    {
+        worldName: 'Searing Executioners',
+        worldFlag: 'https://i.imgur.com/Tbh2j5D.png',
+    },
+    {
         worldName: 'Star Dragon World',
         worldFlag: 'https://i.imgur.com/CMlMAbX.png',
+    },
+    {
+        worldName: 'Time Dragon',
+        worldFlag: 'https://i.imgur.com/MttF9fM.png',
+    },
+    {
+        worldName: "Thunder Empire",
+        worldFlag: 'https://i.imgur.com/IBRiuq9.png',
     }
 ];
 
